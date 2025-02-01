@@ -1,0 +1,31 @@
+{
+  "name": "excel-to-postgres",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pg": "^8.11.11",
+    "@types/pg-copy-streams": "^1.2.5"
+  },
+  "scripts": {
+    "start": "NODE_OPTIONS=\"--max-old-space-size=16384\" bun index.ts",
+    "generate-excel": "bun generate-excel.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/lib-storage": "^3.735.0",
+    "@faker-js/faker": "^9.4.0",
+    "dotenv": "^16.4.7",
+    "exceljs": "4.4.0",
+    "pg": "^8.13.1",
+    "pg-copy-streams": "^6.0.6",
+    "postgres": "3.4.4",
+    "sql-formatter": "^15.4.10",
+    "stream-json": "^1.9.1",
+    "xlsx": "^0.18.5",
+    "xlsx-stream-reader": "^1.1.1",
+    "xxhash-addon": "^2.0.3"
+  }
+}
